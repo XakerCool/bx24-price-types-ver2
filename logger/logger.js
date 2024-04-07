@@ -21,7 +21,7 @@ export class Logger {
 
     accessLog(source, msg) {
         try {
-            let accessLog = `ACCESS ${this.setDate} ${source} - ${msg}`
+            let accessLog = `ACCESS ${this.setDate()} ${source} - ${msg}`
             fs.appendFile(this.accessLogFilePath, accessLog + "\n", (err) => {
                 if (err)
                     console.error(`ERROR ${this.setDate()}: error while writing to access-log file: ${err}`)

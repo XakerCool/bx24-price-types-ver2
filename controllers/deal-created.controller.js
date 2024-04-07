@@ -48,7 +48,7 @@ export class DealCreatedController {
                 return {
                     dealId: dealId,
                     clientId: client.ID,
-                    clientName: (clientName ? clientLastName : "") + " " + (clientLastName ? clientLastName : ""),
+                    clientName: (clientName ? clientName : "") + " " + (clientLastName ? clientLastName : ""),
                     priceType: priceTypeField
                 }
             } else {

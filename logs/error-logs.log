@@ -1,3 +1,32 @@
-ERROR 04.04.2024 20:37:10 fs.controller appendFile - error while writing new file (deal_24).json
-ERROR 04.04.2024 20:38:40 fs.controller writeFile - error while writing new file (deal_26).json - null
-ERROR 04.04.2024 20:41:53 fs.controller writeFile - error while writing new file (deal_28).json - null
+ERROR 07.04.2024 18:31:08 fs.controller writeFile - error while writing new file deal_36.json - null
+ERROR 07.04.2024 18:31:33 (/deal-updated) checkIfUpdated - Cannot read properties of undefined (reading 'dealId')
+ERROR 07.04.2024 18:32:58 (/deal-updated) checkIfUpdated - Cannot read properties of undefined (reading 'dealId')
+ERROR 07.04.2024 19:13:23 (/deal-updated) checkIfUpdated - Cannot read properties of undefined (reading 'dealId')
+ERROR 07.04.2024 19:13:50 (/deal-updated) getDealPriceType crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:13:51 (/deal-updated) getDealPriceType - Cannot read properties of undefined (reading 'UF_CRM_1712241354783')
+ERROR 07.04.2024 19:15:17 (/deal-updated) getDealPriceType crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:15:17 (/deal-updated) getDealPriceType - Cannot read properties of undefined (reading 'UF_CRM_1712241354783')
+ERROR 07.04.2024 19:20:13 fs.controller writeFile - error while writing new file deal_38.json - null
+ERROR 07.04.2024 19:20:46 fs.controller updateFile - null
+ERROR 07.04.2024 19:22:41 fs.controller writeFile - error while writing new file deal_40.json - null
+ERROR 07.04.2024 19:23:06 fs.controller updateFile - null
+ERROR 07.04.2024 19:25:01 (/deal-created) crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:25:01 (/deal-updated) setProduct - Cannot read properties of undefined (reading 'NAME')
+ERROR 07.04.2024 19:25:24 (/deal-created) crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:25:24 (/deal-updated) setProduct - Cannot read properties of undefined (reading 'NAME')
+ERROR 07.04.2024 19:25:52 fs.controller writeFile - error while writing new file deal_42.json - null
+ERROR 07.04.2024 19:26:04 (/deal-created) crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:26:04 (/deal-updated) setProduct - Cannot read properties of undefined (reading 'NAME')
+ERROR 07.04.2024 19:26:48 (/deal-created) crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:26:48 (/deal-updated) setProduct - Cannot read properties of undefined (reading 'result')
+ERROR 07.04.2024 19:27:47 (/deal-updated) setProduct crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:27:47 (/deal-updated) setProduct - Cannot read properties of undefined (reading 'NAME')
+ERROR 07.04.2024 19:28:27 (/deal-updated) setProduct crm.contact.get - Response code 400 (Bad Request)
+ERROR 07.04.2024 19:28:27 (/deal-updated) setProduct - Cannot read properties of undefined (reading 'NAME')
+ERROR 07.04.2024 19:29:00 fs.controller updateFile - null
+ERROR 07.04.2024 19:29:10 fs.controller updateFile - null
+ERROR 07.04.2024 19:34:00 (/deal-created) getDealClientInfo - Client undefined!
+ERROR 07.04.2024 19:34:00 /deal-created (dealId: 44) - Cannot read properties of undefined (reading 'priceType')
+ERROR 07.04.2024 19:34:29 fs.controller writeFile - error while writing new file deal_46.json - null
+ERROR 07.04.2024 19:34:43 fs.controller updateFile - null
+ERROR 07.04.2024 19:35:27 fs.controller updateFile - null
