@@ -9,21 +9,22 @@ export class FsDealsController {
         this.logger = new Logger()
     }
 
-    writeFile(dealId, data) {
+    writeF(dealId, data) {
         try {
             fs.writeFile(this.dealsFilePath + dealId + ".json", JSON.stringify(data, null , 2), (err) => {
                 if (!err)
                     this.logger.successLog("fs.controller writeFile", `file created deal_${dealId}.json`)
-                this.logger.errorLog("fs.controller writeFile", `error while writing new file (deal_${dealId}).json - ${err}`)
+                this.logger.errorLog("fs.controller writeFile", `error while writing new file deal_${dealId}.json - ${err}`)
             })
         } catch (error) {
-            this.logger.errorLog("fs.controller updateFile", error.message)
+            this.logger.errorLog("fs.controller writeFile", error.message)
         }
     }
 
-    async updateFile(dealId, data) {
+    updateF(dealId, data) {
         return new Promise((resolve) => {
             try {
+                fs.writeFile(this.dealsFilePath + dealId + ".json", "", () => {})
                 fs.writeFile(this.dealsFilePath + dealId + ".json", JSON.stringify(data, null, 2), { flag: 'a' }, (err) => {
                     this.logger.errorLog("fs.controller updateFile", err)
                 })
@@ -34,7 +35,7 @@ export class FsDealsController {
         })
     }
 
-    async readFile(dealId) {
+    readF(dealId) {
         return new Promise((resolve) => {
             try {
                 fs.readFile(this.dealsFilePath + dealId + ".json", 'utf-8', (err, data) => {
@@ -44,7 +45,7 @@ export class FsDealsController {
                     } else {
                         try {
                             const jsonData = JSON.parse(data);
-                            resolve(jsonData.data);
+                            resolve(jsonData);
                         } catch (error) {
                             this.logger.errorLog("fs.controller readFileIfExists", error)
                             resolve(null);

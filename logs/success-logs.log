@@ -1,6 +1,12 @@
-SUCCESS 04.04.2024 20:37:10 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
-SUCCESS 04.04.2024 20:37:10 fs.controller appendFile - file created deal_24.json
-SUCCESS 04.04.2024 20:38:40 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
-SUCCESS 04.04.2024 20:38:40 fs.controller writeFile - file created deal_26.json
-SUCCESS 04.04.2024 20:41:53 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
-SUCCESS 04.04.2024 20:41:53 fs.controller writeFile - file created deal_28.json
+SUCCESS 07.04.2024 18:31:08 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
+SUCCESS 07.04.2024 18:31:08 fs.controller writeFile - file created deal_36.json
+SUCCESS 07.04.2024 19:20:13 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
+SUCCESS 07.04.2024 19:20:13 fs.controller writeFile - file created deal_38.json
+SUCCESS 07.04.2024 19:22:41 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
+SUCCESS 07.04.2024 19:22:41 fs.controller writeFile - file created deal_40.json
+SUCCESS 07.04.2024 19:25:52 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
+SUCCESS 07.04.2024 19:25:52 fs.controller writeFile - file created deal_42.json
+SUCCESS 07.04.2024 19:34:29 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
+SUCCESS 07.04.2024 19:34:29 fs.controller writeFile - file created deal_46.json
+SUCCESS 07.04.2024 19:34:43 (/deal-updated) setProduct crm.deal.productrows.set status - [object Object]
+SUCCESS 07.04.2024 19:35:27 (/deal-updated) setProduct crm.deal.productrows.set status - true
