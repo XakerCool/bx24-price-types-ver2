@@ -4,6 +4,7 @@ import {Logger} from "../logger/logger.js";
 import {FsDealsController} from "./fs_deals.controller.js";
 import {ProductsController} from "./product.controller.js";
 
+// Контроллер обновления сделки
 export class DealUpdatedController {
     bx = null
     productController = null
@@ -16,17 +17,25 @@ export class DealUpdatedController {
         this.fs = new FsDealsController()
     }
 
+    // Установка корректных данных товаре в сделке
     async setProduct(dealId) {
         try {
+            console.log("2 mid")
+            // Получение нужной нам сделки
             const deal = await this.bx.deals.get(dealId);
+
+            // Получение товаров из сделки
             const dealProducts = await this.productController.getProductRowsFromDeal(dealId);
 
+            console.log(dealProducts)
+
+            // Проверяем, есть ли в сделке изменения
             const isChanged = await this.checkIfUpdated(dealId, deal, dealProducts);
             if(isChanged.res) {
                 let products = []
                 let rows = []
                 let upgradableFileData = await this.fs.readF(dealId)
-                if (isChanged.type === 'client') {
+                if (isChanged.type === 'client') { // Изменен клиент
                     this.logger.accessLog("(/deal-updated) setProduct", `changing client deal_${dealId}.json`)
                     const priceTypeField = await this.getDealPriceType(deal.result.CONTACT_ID);
                     await Promise.all(dealProducts.map(async dealProduct => {
@@ -46,7 +55,7 @@ export class DealUpdatedController {
                     upgradableFileData.products = products
                     upgradableFileData.priceType = priceTypeField
 
-                } else if (isChanged.type === 'products') {
+                } else if (isChanged.type === 'products') { // Изменен список товаров
                     this.logger.accessLog("(/deal-updated) setProduct", `changing products list deal_${dealId}.json`)
                     const priceTypeField = await this.getFilePriceType(dealId);
                     await Promise.all(dealProducts.map(async dealProduct => {
@@ -57,8 +66,17 @@ export class DealUpdatedController {
 
                     upgradableFileData.products = products
 
-                } else if (isChanged.type === 'quantity') {
+                } else if (isChanged.type === 'quantity') { // Изменено кол-во товара
+                    this.logger.accessLog("(/deal-updated) setProduct", `changing products quantity deal_${dealId}.json`)
+                    const priceTypeField = await this.getFilePriceType(dealId);
+                    await Promise.all(dealProducts.map(async dealProduct => {
+                        const product = await this.productController.getOriginalProductWithPrice(dealProduct.id, priceTypeField?.value ? priceTypeField.value.toLowerCase() : "розница");
+                        product.quantity = dealProduct.quantity
+                        products.push(product);
+                    }));
 
+                    upgradableFileData.products = products
+                    console.log(upgradableFileData)
                 }
                 if (products.length !== 0) {
                     products.forEach(product => {
@@ -68,11 +86,12 @@ export class DealUpdatedController {
                             "QUANTITY": product.quantity
                         });
                     });
+                    // Установка списка товаров в сделку
                     const res = await this.bx.call("crm.deal.productrows.set", {id: dealId, rows: rows});
                     if (res.error) {
-                        this.logger.errorLog("(/deal-updated) setProduct crm.deal.productrows.set", res.error)
+                        this.logger.errorLog("(/deal-updated) setProduct crm.deal.productrows.set (deal - " + dealId + ")", res.error)
                     } else {
-                        this.logger.successLog("(/deal-updated) setProduct crm.deal.productrows.set", res.result)
+                        this.logger.successLog("(/deal-updated) setProduct crm.deal.productrows.set (deal - " + dealId + ")", res.result)
                         await this.fs.updateF(dealId,upgradableFileData);
                     }
 
@@ -88,6 +107,7 @@ export class DealUpdatedController {
         }
     }
 
+    // получение типа цены из файла
     async getFilePriceType(dealId) {
         return new Promise(async (resolve, reject) => {
             try {
@@ -105,6 +125,7 @@ export class DealUpdatedController {
         })
     }
 
+    // получение типа цены из сделки
     async getDealPriceType(clientId) {
         return new Promise(async (resolve, reject) => {
             try {
@@ -139,6 +160,7 @@ export class DealUpdatedController {
         })
     }
 
+    // проверка на наличие изменений в сделке
     async checkIfUpdated(dealId, deal, dealProducts) {
         try {
             const fileData = await this.fs.readF(dealId)

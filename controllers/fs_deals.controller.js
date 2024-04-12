@@ -2,13 +2,16 @@ import fs from "fs"
 
 import {Logger} from "../logger/logger.js";
 
+/*
+* Класс для работы с файлами, в которых хранится информация о сделках
+* */
 export class FsDealsController {
     logger
     dealsFilePath = "./deals/deal_"
     constructor() {
         this.logger = new Logger()
     }
-
+    // Функция записи в файл
     writeF(dealId, data) {
         try {
             fs.writeFile(this.dealsFilePath + dealId + ".json", JSON.stringify(data, null , 2), (err) => {
@@ -20,21 +23,22 @@ export class FsDealsController {
             this.logger.errorLog("fs.controller writeFile", error.message)
         }
     }
-
+    // Функция обновления файла
     updateF(dealId, data) {
         return new Promise((resolve) => {
             try {
                 fs.writeFile(this.dealsFilePath + dealId + ".json", "", () => {})
-                fs.writeFile(this.dealsFilePath + dealId + ".json", JSON.stringify(data, null, 2), { flag: 'a' }, (err) => {
+                fs.writeFile(this.dealsFilePath + dealId + ".json", JSON.stringify(data, null, 2), (err) => {
                     this.logger.errorLog("fs.controller updateFile", err)
                 })
+                resolve()
             } catch (error) {
                 this.logger.errorLog("fs.controller updateFile", error.message)
                 resolve(null)
             }
         })
     }
-
+    // Функция чтения файла
     readF(dealId) {
         return new Promise((resolve) => {
             try {

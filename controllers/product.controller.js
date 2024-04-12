@@ -1,6 +1,8 @@
 import {Bitrix} from "@2bad/bitrix"
 import {Logger} from "../logger/logger.js"
 
+
+// Класс для работы с товарами сделки
 export class ProductsController {
     bx = null
     productFields = []
@@ -11,10 +13,12 @@ export class ProductsController {
         this.setProductFields().then(r => {})
     }
 
+    // Установка полей товара. Необходимо для корректнной установки цены товара под соответствующий тип
     async setProductFields() {
         this.productFields = await this.getProductFieldsFromBx()
     }
 
+    // Получение товаров из сделки
     async getProductRowsFromDeal(dealId) {
         return new Promise (async (resolve, reject) => {
             try {
@@ -41,6 +45,7 @@ export class ProductsController {
         })
     }
 
+    // Получение оригинала товара/торгового предложения с ценой соответствующей типу цены сделки
     async getOriginalProductWithPrice(offerId, priceType) {
         return new Promise(async (resolve, reject) => {
             try {
@@ -79,6 +84,7 @@ export class ProductsController {
         })
     }
 
+    // Получение поля цены товара из битрикса
     async getProductFieldsFromBx() {
         return new Promise(async (resolve) => {
             try {
