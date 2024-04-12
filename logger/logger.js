@@ -1,5 +1,6 @@
 import fs from "fs";
 
+// Класс для логирования: Ошибок, Успеха работы, Попытки работы
 export class Logger {
     errorLogFilePath = "./logs/error-logs.log"
     accessLogFilePath = "./logs/access-logs.log"

@@ -30,3 +30,57 @@ ERROR 07.04.2024 19:34:00 /deal-created (dealId: 44) - Cannot read properties of
 ERROR 07.04.2024 19:34:29 fs.controller writeFile - error while writing new file deal_46.json - null
 ERROR 07.04.2024 19:34:43 fs.controller updateFile - null
 ERROR 07.04.2024 19:35:27 fs.controller updateFile - null
+ERROR 10.04.2024 20:03:12 fs.controller writeFile - error while writing new file deal_52.json - null
+ERROR 10.04.2024 20:03:44 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:04:16 fs.controller updateFile - null
+ERROR 10.04.2024 20:04:33 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:06:46 fs.controller updateFile - null
+ERROR 10.04.2024 20:07:26 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:08:31 fs.controller updateFile - null
+ERROR 10.04.2024 20:08:46 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:09:47 fs.controller updateFile - null
+ERROR 10.04.2024 20:10:10 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:10:21 fs.controller updateFile - null
+ERROR 10.04.2024 20:12:27 fs.controller updateFile - null
+ERROR 10.04.2024 20:12:34 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:12:46 fs.controller updateFile - null
+ERROR 10.04.2024 20:17:47 fs.controller updateFile - null
+ERROR 10.04.2024 20:18:14 fs.controller updateFile - null
+ERROR 10.04.2024 20:24:26 fs.controller updateFile - null
+ERROR 10.04.2024 20:36:16 fs.controller updateFile - null
+ERROR 10.04.2024 20:36:28 fs.controller updateFile - null
+ERROR 10.04.2024 20:37:13 fs.controller updateFile - null
+ERROR 10.04.2024 20:37:22 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:39:15 fs.controller updateFile - null
+ERROR 10.04.2024 20:39:59 fs.controller updateFile - null
+ERROR 10.04.2024 20:41:33 fs.controller updateFile - null
+ERROR 10.04.2024 20:42:01 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:43:20 fs.controller updateFile - null
+ERROR 10.04.2024 20:44:05 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:45:59 fs.controller updateFile - null
+ERROR 10.04.2024 20:46:24 (/deal-updated) setProduct - products length = 0
+ERROR 10.04.2024 20:52:38 fs.controller updateFile - null
+ERROR 10.04.2024 20:53:21 fs.controller updateFile - null
+ERROR 10.04.2024 20:55:14 fs.controller updateFile - null
+ERROR 10.04.2024 20:56:05 fs.controller updateFile - null
+ERROR 10.04.2024 20:56:35 fs.controller readFileIfExists - SyntaxError: Unexpected end of JSON input
+ERROR 10.04.2024 20:56:35 (/deal-updated) checkIfUpdated - Cannot read properties of null (reading 'dealId')
+ERROR 10.04.2024 20:57:15 fs.controller readFileIfExists - SyntaxError: Unexpected end of JSON input
+ERROR 10.04.2024 20:57:15 (/deal-updated) checkIfUpdated - Cannot read properties of null (reading 'dealId')
+ERROR 10.04.2024 20:59:03 fs.controller readFileIfExists - SyntaxError: Unexpected end of JSON input
+ERROR 10.04.2024 20:59:03 (/deal-updated) checkIfUpdated - Cannot read properties of null (reading 'dealId')
+ERROR 10.04.2024 21:06:15 fs.controller writeFile - error while writing new file deal_62.json - null
+ERROR 10.04.2024 21:07:09 fs.controller updateFile - null
+ERROR 10.04.2024 21:25:50 fs.controller updateFile - null
+ERROR 10.04.2024 21:26:26 fs.controller updateFile - null
+ERROR 10.04.2024 21:33:23 fs.controller updateFile - null
+ERROR 10.04.2024 21:33:51 fs.controller updateFile - null
+ERROR 10.04.2024 21:34:10 fs.controller updateFile - null
+ERROR 10.04.2024 21:35:30 fs.controller updateFile - null
+ERROR 10.04.2024 21:35:57 fs.controller updateFile - null
+ERROR 10.04.2024 21:36:29 fs.controller updateFile - null
+ERROR 10.04.2024 21:37:08 fs.controller updateFile - null
+ERROR 10.04.2024 21:37:26 fs.controller updateFile - null
+ERROR 10.04.2024 21:38:07 fs.controller updateFile - null
+ERROR 10.04.2024 21:38:36 fs.controller updateFile - null
+ERROR 10.04.2024 22:21:02 fs.controller updateFile - null

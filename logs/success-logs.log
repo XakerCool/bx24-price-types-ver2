@@ -10,3 +10,48 @@ SUCCESS 07.04.2024 19:34:29 (/deal-created) getProductsIfExist crm.deal.productr
 SUCCESS 07.04.2024 19:34:29 fs.controller writeFile - file created deal_46.json
 SUCCESS 07.04.2024 19:34:43 (/deal-updated) setProduct crm.deal.productrows.set status - [object Object]
 SUCCESS 07.04.2024 19:35:27 (/deal-updated) setProduct crm.deal.productrows.set status - true
+SUCCESS 10.04.2024 20:03:12 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
+SUCCESS 10.04.2024 20:03:12 fs.controller writeFile - file created deal_52.json
+SUCCESS 10.04.2024 20:04:16 (/deal-updated) setProduct crm.deal.productrows.set (deal - )52 - true
+SUCCESS 10.04.2024 20:06:46 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:08:31 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:09:47 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:10:21 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:12:27 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:12:46 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:17:47 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:18:14 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:24:26 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:36:16 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:36:28 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:37:13 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:39:15 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:39:59 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:41:33 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:43:20 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:45:59 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:52:38 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:53:21 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:55:14 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 20:56:05 (/deal-updated) setProduct crm.deal.productrows.set (deal - 52) - true
+SUCCESS 10.04.2024 21:06:15 (/deal-created) getProductsIfExist crm.deal.productrows.set - status: true
+SUCCESS 10.04.2024 21:06:15 fs.controller writeFile - file created deal_62.json
+SUCCESS 10.04.2024 21:07:09 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:25:50 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:26:26 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:33:23 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:33:51 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:34:10 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:35:30 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:35:57 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:36:29 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:37:08 (/deal-updated) setProduct - Deal product rows updated dealId - 62
+SUCCESS 10.04.2024 21:37:08 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:37:26 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:37:26 (/deal-updated) setProduct - Deal product rows updated dealId - 62
+SUCCESS 10.04.2024 21:38:07 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:38:07 (/deal-updated) setProduct - Deal product rows updated dealId - 62
+SUCCESS 10.04.2024 21:38:36 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 21:38:36 (/deal-updated) setProduct - Deal product rows updated dealId - 62
+SUCCESS 10.04.2024 22:21:02 (/deal-updated) setProduct crm.deal.productrows.set (deal - 62) - true
+SUCCESS 10.04.2024 22:21:02 (/deal-updated) setProduct - Deal product rows updated dealId - 62
